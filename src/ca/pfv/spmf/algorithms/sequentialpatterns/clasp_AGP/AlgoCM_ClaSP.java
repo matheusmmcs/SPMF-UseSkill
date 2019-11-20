@@ -173,7 +173,7 @@ public class AlgoCM_ClaSP {
         // update COOC map
         for (Sequence seq : database.getSequences()) {
             HashSet<Integer> alreadySeenA = new HashSet<Integer>();
-            Map<Integer, Set<Integer>> alreadySeenB_equals = new HashMap<>();
+            Map<Integer, Set<Integer>> alreadySeenB_equals = new HashMap<Integer, Set<Integer>>();
 
             // for each item
             for (int i = 0; i < seq.getItemsets().size(); i++) {

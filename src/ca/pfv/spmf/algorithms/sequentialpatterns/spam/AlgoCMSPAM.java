@@ -280,7 +280,7 @@ public class AlgoCMSPAM {
             short itemsetCount = 0;
 
             Set<Integer> alreadyProcessed = new HashSet<Integer>();
-            Map<Integer, Set<Integer>> equalProcessed = new HashMap<>();
+            Map<Integer, Set<Integer>> equalProcessed = new HashMap<Integer, Set<Integer>>();
             loopI:
             for (int i = 0; i < transaction.length; i++) {
                 Integer itemI = transaction[i];

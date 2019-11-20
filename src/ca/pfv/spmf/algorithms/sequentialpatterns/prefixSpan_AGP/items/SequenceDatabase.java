@@ -81,7 +81,7 @@ public class SequenceDatabase {
             //We get the set of items
             Set<Item> frequent = frequentItems.keySet();
             //And prepare a list to keep the non-frequent ones
-            Set<Item> toRemove = new HashSet<>();
+            Set<Item> toRemove = new HashSet<Item>();
             for (Item frequentItem : frequent) {
                 if ((frequentItems.get(frequentItem)).cardinality() < minSupportAbsolute) {
                     toRemove.add(frequentItem);

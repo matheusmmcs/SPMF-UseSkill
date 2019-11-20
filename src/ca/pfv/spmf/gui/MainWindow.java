@@ -87,7 +87,7 @@ public class MainWindow extends JFrame {
     private JLabel lbHelp6;
     private JTextField textFieldInput;
     private JTextField textFieldOutput;
-    private JComboBox<String> comboBox;
+    private JComboBox comboBox;
     private JTextArea textArea;
     private JButton buttonRun;
     private JCheckBox checkboxOpenOutput;
@@ -122,7 +122,7 @@ public class MainWindow extends JFrame {
         contentPane.setLayout(null);
 
         // Combo box to store the list of algorithms.
-        comboBox = new JComboBox<String>(new Vector<String>());
+        comboBox = new JComboBox(new Vector<String>());
         comboBox.setMaximumRowCount(20);
         comboBox.addItem("");
         comboBox.addItem("  ---- SEQUENTIAL PATTERN MINING ----");
